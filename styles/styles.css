@@ -1,0 +1,78 @@
+@import url('reset.css');
+
+@font-face {
+  font-family: 'MonR';
+  src: url('../fonts/Montserrat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MonL';
+  src: url('../fonts/Montserrat-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MonB';
+  src: url('../fonts/Montserrat-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fc-white {
+  color: #FFFFFF;
+}
+
+.fc-blue {
+  color: #2352FF;
+}
+
+.fc-d-blue {
+  color: #1D3FBE;
+}
+
+.fw-b {
+  font-family: MonB;
+}
+
+.fs-20 {
+  font-size: 20px;
+  line-height: 60px;
+}
+
+.fs-22 {
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.fs-24 {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.fs-30 {
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.fs-36 {
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.fs-64 {
+  font-size: 64px;
+  line-height: 70px;
+}
+
+.fs-80 {
+  font-size: 80px;
+  line-height: 110px;
+}
+
+.fs-96 {
+  font-size: 96px;
+  line-height: 110px;
+}
