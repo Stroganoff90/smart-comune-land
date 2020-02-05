@@ -22,80 +22,7 @@
 }
 
 body {
-  position: relative;
-  overflow-x: hidden;
-}
-
-.index0 {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-}
-
-.index999 {
-  position: absolute;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  padding: 42px 90px 140px;
-}
-
-.index0 div {
-  position: absolute;
-}
-
- .blck1 {
-  background-image: url('../img/blck1.png');
-  width: 2470px;
-  height: 1470px;
-  top: -210px;
-  left: -420px;
-  background-repeat: no-repeat;
-  background-size: 90%;
-}
-
-.blck2 {
-  background-image: url('../img/blck2.png');
-  width: 1822px;
-  height: 900px;
-  top: 1240px;
-  left: -540px;
-  background-repeat: no-repeat;
-  transform: rotate(4deg);
-  background-size: 85%;
-}
-
-.blck3 {
-  background-image: url('../img/blck2.png');
-  width: 1822px;
-  height: 900px;
-  transform: scale(1, -1);
-  top: 2250px;
-  left: 460px;
-  background-repeat: no-repeat;
-  background-size: 95%;
-}
-
-.blck4 {
-  background-image: url('../img/blck1.png');
-  width: 2470px;
-  height: 1470px;
-  transform: rotate(180deg);
-  top: 2910px;
-  left: -140px;
-  background-repeat: no-repeat;
-  background-size: 80%;
-}
-
-.blck5 {
-  background-image: url('../img/blck2.png');
-  width: 1822px;
-  height: 900px;
-  transform: scale(-1, -1);
-  top: 4105px;
-  left: -920px;
-  background-repeat: no-repeat;
+  background-color: darkkhaki;
 }
 
 /* ================================================ */
@@ -118,23 +45,19 @@ body {
 
 /* ================================================ */
 
-.block1 { 
-  padding-right: 0px;
-}
-
-.block2 {
+.mt-bl2 {
   margin-top: 50px;
 }
 
-.block3 {
+.mt-bl3 {
   margin-top: 360px;
 }
 
-.block4 {
+.mt-bl4 {
   margin-top: 130px;
 }
 
-.block5 {
+.mt-bl5 {
   margin-top: 330px;
 }
 
@@ -168,16 +91,14 @@ body {
 
 /* ================================================ */
 
-.header {
-  margin: 0 86px 0 auto;
-  padding: 26px 0;
-}
-
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 970px;
+  margin-right: 86px;
+  margin-left: auto;
+  padding: 40px 0 26px;;
 }
 
 .navbar li {
@@ -213,6 +134,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  
+}
+
+.head {
+  padding-left: 90px;
 }
 
 .smart-logo {
@@ -246,6 +172,7 @@ body {
   background-image: url('../img/mob-block-2.svg');
   width: 770px;
   height: 740px;
+  margin: 0 auto;
 }
 
 .block-contain {
@@ -270,6 +197,7 @@ body {
   background-image: url('../img/mob-block-3.svg');
   width: 770px;
   height: 740px;
+  margin: 0 auto;
 }
 
 .peoples-n-path {
@@ -340,6 +268,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  padding-bottom: 120px;
 }
 
 .input,
