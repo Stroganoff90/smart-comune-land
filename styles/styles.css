@@ -24,7 +24,7 @@
 body {
   position: relative;
   overflow-x: hidden;
-  background-color: burlywood;
+  /* background-color: burlywood; */
 }
 
 .index0 {
@@ -46,13 +46,14 @@ body {
   position: absolute;
 }
 
-/* .blck1 {
+ .blck1 {
   background-image: url('../img/blck1.png');
   width: 2470px;
   height: 1470px;
-  top: 0;
-  left: 0;
+  top: -210px;
+  left: -420px;
   background-repeat: no-repeat;
+  background-size: 90%;
 }
 
 .blck2 {
@@ -63,7 +64,7 @@ body {
   left: 0;
   background-repeat: no-repeat;
 }
-
+/*
 .blck3 {
   background-image: url('../img/blck2.png');
   width: 1822px;
@@ -186,6 +187,7 @@ body {
   line-height: 40px;
   color: #2352FF;
   position: relative;
+  font-weight: 600;
 }
 
 .navbar-item:hover {
