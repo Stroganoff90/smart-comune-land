@@ -48,7 +48,7 @@ body {
 .block2 {
   background-image: url('../img/blck2.png');  
   height: 900px;
-  background-position: -210% 0%;
+  background-position: -640px 0%;
   background-size: 85%;
 }
 
@@ -206,9 +206,9 @@ body {
 
 /* ================================================ */
 
-.mob-block-2 {
-  background-image: url('../img/mob-block-2.svg');
-  width: 770px;
+.mob-block-2,
+.mob-block-3 {
+  background-size: contain;
   height: 740px;
   margin: 0 auto;
 }
@@ -231,11 +231,12 @@ body {
   margin-top: 40px;
 }
 
+.mob-block-2 {
+  background-image: url('../img/mob-block-2.svg');
+}
+
 .mob-block-3 {
   background-image: url('../img/mob-block-3.svg');
-  width: 770px;
-  height: 740px;
-  margin: 0 auto;
 }
 
 
@@ -372,4 +373,37 @@ body {
   margin-top: 80px;
   outline: none;
   box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+}
+
+/* ======================================= */
+/* ======================================= */
+/* ======================================= */
+
+@media (max-width: 1440px) {
+	
+  .block-contain {
+    max-width: 500px;
+  } 
+
+  .blockMjr-h2 {
+    margin-top: 120px;
+  }
+
+  .peoples-n-city {
+    background-position: 700px 190px;
+    background-size: 65%;
+  }
+
+  .block1 {
+    background-position: -770px -310px;
+  }
+
+  .blockTop-h1 {
+    font-size: 66px;
+  }
+  
+  .blockTop-p {
+    font-size: 24px;
+    line-height: 48px;
+  }
 }
