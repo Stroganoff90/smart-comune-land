@@ -578,6 +578,10 @@ body {
   .mt-blck5 {
     margin-top: 370px;
   }
+
+  .mob-str {
+    display: flex;
+  }
 }
 
 
