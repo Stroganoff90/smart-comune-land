@@ -29,14 +29,31 @@
                     <a class="navbar-item" href="#conts">Contacts</a>
                   </li>
                 </ul>
-                <div class="burger"></div>
+                <div class="burger"  onclick="hideOpen()"></div>
+                <div id="hide_menu" class="hide_menu">
+                  <div class="hide_close" onclick="hideClose()"></div>
+                  <ul class="hide_navbar">
+                    <li>
+                      <a class="navbar-item" href="#control" onclick="hideClose()">City control</a>
+                    </li>
+                    <li>
+                      <a class="navbar-item" href="#solving" onclick="hideClose()">Timely problem solving</a>
+                    </li>
+                    <li>
+                      <a class="navbar-item" href="#teamwork" onclick="hideClose()">Team work</a>
+                    </li>
+                    <li>
+                      <a class="navbar-item" href="#conts" onclick="hideClose()">Contacts</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>    
         <div class="container-fluid">
           <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-8 col-12">
+            <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12">
               <div class="head">
                 <div class="img smart-logo"></div>         
                 <h1 class="blockTop-h1 fc-white">Smart Commune</h1>
@@ -104,10 +121,7 @@
                   <h2 class="blockMjr-h2 fc-white">Team work</h2>
                   <p class="blockMjr-p fc-white">Our main goals make communication between local government and citizen’s 
                     easy and make life better. We want to make global safe and high standard 
-                    of living.</p>
-                  <a class="button" href="#">
-                    <span class="txt-btn">CONTACT US</span>
-                  </a>
+                    of living.</p>                  
                 </div>
               </div>
             </div>
@@ -165,26 +179,41 @@
                 </div>
               </div>
               <div class="col-xl-6 col-lg-12 col-md-12">
-                <form class="form" action="">           
+                <form class="form" method="post">           
                   <div>
-                    <input class="input" type="text" placeholder="Name">
+                     <input class="input" id="userName" name="userName" type="text" placeholder="Name">
                   </div>            
                   <div>
-                    <input class="input" type="text" placeholder="Email">
+                    <input class="input" id="userEmail" name="userEmail" type="text" placeholder="Email">
                   </div>            
                   <div>
-                    <input class="input" type="text" placeholder="Phone number">
+                    <input class="input" id="userPhone" name="userPhone" type="text" placeholder="Phone number">
                   </div>            
                   <div>
-                    <textarea class="textarea" name="" id="" cols="30" rows="2" placeholder="Message"></textarea>
+                    <textarea class="textarea" name="userComment" id="userComment" cols="30" rows="2" placeholder="Message"></textarea>
                   </div>
-                  <input class="submit" type="submit" value="SEND MESSAGE">            
+                  <input class="submit sendMail" type="button" value="SEND MESSAGE">            
                 </form>
+                <div id="report-3" style="display: none; position: fixed; top: 50px; right: 15px; background: #fff; color: #1e2648; padding: 15px; box-shadow: 0 0px 5px #989898; z-index: 9999;"></div>
               </div>
             </div>
           </div>  
         </div>
       </div>
     </div>
+
+  <script src="script/jquery.min.js"></script>
+  <script src="script/use.js"></script>
+  <script>
+    
+      function hideOpen(){
+        document.getElementById("hide_menu").style.display = "block";
+      };
+      function hideClose(){
+        document.getElementById("hide_menu").style.display = "none";
+      };  
+    
+  </script>
+
   </body>
 </html>

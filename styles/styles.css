@@ -171,13 +171,52 @@ body {
 }
 
 .burger {
-  display: none;
+  /* display: none; */
   width: 20px;
   height: 14px;
   background-image: url('../img/burger.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.burger:hover {
+  cursor: pointer;
+}
+
+.hide_menu {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../img/hide_menu.png');
+  position: fixed;
+  background-position: center;
+  z-index: 990;
+  top: 0;
+  left: 0;
+  padding: 28px 16px 0 44px;
+}
+
+.hide_close {
+  width: 16px;
+  height: 16px;
+  background-image: url('../img/hide_close.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-bottom: 48px;
+}
+
+.hide_close:hover {
+  cursor: pointer;
+}
+
+.hide_navbar .navbar-item {
+  color: #fff;  
+}
+
+.hide_navbar li {
+  margin-bottom: 32px;
 }
 
 /* ================================================ */
@@ -579,25 +618,95 @@ body {
     margin-top: 370px;
   }
 
+  .conts-adrs {
+    width: 100%;
+  }
+
   .mob-str {
     display: flex;
+    justify-content: space-between
+  }
+
+  .altarx-logo  {
+    margin-top: 0;
+  }
+
+  .form {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
+@media (max-width: 768px) {
 
+  .block4 {
+    background-position: -60px -220px;
+  }
+}
 
+@media (max-width: 736px) {
 
+  .block1 {
+    background-position: -350px -30px;
+  }
 
+  .peoples-n-city {
+    background-position: 370px 450px;
+  }
 
+  .navbar {
+    margin-right: 6px;
+  }
 
+  .smart-logo {
+    margin-top: 44px;
+  }
 
-/* @media (max-width: 375px) {
+  .blockTop-h1 {
+    margin-top: 10px;
+  }
 
-  
+  .blockMjr-h2 {
+    margin-top: 30px;
+  }
+
+  .block4 {
+    padding-top: 40px;
+    background-position: -60px -200px;
+  }
+}
+
+@media (max-width: 414px) {
+
+  .navbar {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+  }
 
   .smart-logo {
     width: 38px;
     height: 36px;
+    margin-top: 0;
+  }
+
+  .block1 {
+    background-position: -150px -80px;
+    height: 430px;
+  }
+
+  .peoples-n-city {
+    background-position: 190px 220px;
+  }
+
+  .head {
+    padding-left: 10px;
+    padding-top: 30px;
   }
 
   .blockTop-h1 {
@@ -612,6 +721,124 @@ body {
   }
 
   .button {
-
+    width: 154px;
+    height: 44px;    
   }
-} */
+
+  .txt-btn {
+    font-size: 12px;
+    line-height: 32px;
+  }
+
+  .block-contain {
+    max-width: 100%;
+  }
+
+  .block-contain h2,
+  .block-contain p {
+    text-align: left;
+  }
+
+  .blockMjr-h2 {
+    font-size: 30px;
+    line-height: 60px;
+    margin-top: 0;
+  }
+
+  .blockMjr-p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 0;
+  }
+
+  .block2 {
+    background-position: -110px 280px;
+    background-size: 140%;
+    height: 560px;
+  }
+
+  .mob-block-2, 
+  .mob-block-3 {
+    height: 290px;
+    margin-top: 32px;
+  }
+
+  .block3 {
+    background-position: -110px 210px;
+    height: 530px;
+  }
+
+  .block4  {
+    background-position: -110px -130px;
+    background-size: 160%;
+    height: 1200px;
+  }
+
+  .peoples-n-path {
+    background-position: 0px 160px;
+    background-size: 110%;
+  }
+
+  .mt-blck5 {
+    margin-top: 300px;
+  }
+
+  .block5 {
+    background-image: none;
+  }
+
+  .contacts {
+    height: 150px;
+  }
+
+  .conts-city {
+    font-size: 18px;
+  }
+
+  .conts-txt {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 22px;
+  }
+
+  .altarx-logo  {
+    width: 140px;
+    height: 16px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .input {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+
+  .textarea {
+    font-size: 16px;
+  }
+
+  .submit {
+    height: 44px;
+    font-size: 12px;
+    line-height: 44px;
+    margin-top: 26px;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .peoples-n-city {
+    background-position: 170px 240px;
+  }
+
+  .blockMjr-h2 {
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .block4 {
+    background-position: -110px -120px;
+  }
+}
