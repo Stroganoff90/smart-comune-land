@@ -224,8 +224,7 @@ body {
 .img {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  
+  background-size: contain;  
 }
 
 .head {
@@ -327,8 +326,7 @@ body {
 
 .contacts {
   display: none;
-  height: 360px;
-  
+  height: 360px;  
 }
 
 .curr-conts {

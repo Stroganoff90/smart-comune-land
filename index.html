@@ -131,12 +131,12 @@
               <div class="col-xl-6 col-lg-12 col-md-12">
                 <div class="block-contain">
                   <div class="conts-adrs">
-                    <a class="conts-city fc-blue" href="#">Moscow</a>
-                    <a class="conts-city fc-blue curr-sity" href="#">Samara</a>
-                    <a class="conts-city fc-blue" href="#">Togliatti</a>
-                    <a class="conts-city fc-blue" href="#">Penza</a>
+                    <a data-tab="msk" class="conts-city fc-blue" href="#">Moscow</a>
+                    <a data-tab="smr" class="conts-city fc-blue curr-sity" href="#">Samara</a>
+                    <a data-tab="tlt" class="conts-city fc-blue" href="#">Togliatti</a>
+                    <a data-tab="pnz" class="conts-city fc-blue" href="#">Penza</a>
                   </div>
-                  <div class="contacts conts-city-msk">
+                  <div data-tab="msk" class="contacts conts-city-msk">
                     <div class="mob-str">
                       <p class="conts-txt fc-blue">129226, Moscow,<br>st. Dokukina, 8</p>
                       <p class="conts-txt fc-blue">contact@altarix.ru<br>hr@altarix.ru</p>
@@ -146,7 +146,7 @@
                       <div class="altarx-logo img"></div>
                     </div>
                   </div>
-                  <div class="contacts conts-city-smr curr-conts">
+                  <div data-tab="smr" class="contacts conts-city-smr curr-conts">
                     <div class="mob-str">
                       <p class="conts-txt fc-blue">443068, Samara,<br>Lenina Prospect, 25<br>BC "Zvezda"</p>
                       <p class="conts-txt fc-blue">contact@altarix.ru<br>hr@altarix.ru</p>
@@ -156,7 +156,7 @@
                       <div class="altarx-logo img"></div>
                     </div>
                   </div>
-                  <div class="contacts conts-city-tlt">
+                  <div data-tab="tlt" class="contacts conts-city-tlt">
                     <div class="mob-str">
                       <p class="conts-txt fc-blue">445004, Togliatti,<br>st. Malachitovaya, 3<br>BC "Belyi Dom"</p>
                       <p class="conts-txt fc-blue">contact@altarix.ru<br>hr@altarix.ru</p>
@@ -166,7 +166,7 @@
                       <div class="altarx-logo img"></div>
                     </div>
                   </div>
-                  <div class="contacts conts-city-pnz">
+                  <div data-tab="pnz" class="contacts conts-city-pnz">
                     <div class="mob-str">
                       <p class="conts-txt fc-blue">440052, Penza,<br>Sverdlov street, 2i<br>office 518</p>
                       <p class="conts-txt fc-blue">contact@altarix.ru<br>hr@altarix.ru</p>
@@ -211,7 +211,36 @@
       };
       function hideClose(){
         document.getElementById("hide_menu").style.display = "none";
-      };  
+      };
+
+      // $('.conts-city').click(function() {
+      //   var id = $(this).attr('data-tab'),
+      //       content = $('.conts-city');
+        
+      //   $('.conts-city').removeClass('curr-sity');
+      //   $(this).addClass('curr-sity'); 
+        
+      //   $('.contacts').removeClass('curr-conts');
+      //   content.addClass('curr-conts'); 
+      // });  
+
+      var jsTriggers = document.querySelectorAll('.conts-city'),
+          jsContents = document.querySelectorAll('.contacts');
+      
+      jsTriggers.forEach(function(trigger) {
+      trigger.addEventListener('click', function() {
+      var id = this.getAttribute('data-tab'),
+          content = document.querySelector('.contacts .curr-conts'),
+          activeTrigger = document.querySelector('.conts-city .curr-sity');
+          // activeContent = document.querySelector('.js-tab-content.active');
+      
+      activeTrigger.classList.remove('curr-sity'); // 1
+      trigger.classList.add('curr-sity'); // 2
+      
+      activeContent.classList.remove('curr-conts'); // 3
+      content.classList.add('curr-conts'); // 4
+   });
+});
     
   </script>
 
