@@ -178,6 +178,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  z-index: 6;
 }
 
 .burger:hover {
@@ -305,6 +306,8 @@ body {
   line-height: 40px;
   position: relative;
   color: #2352FF;
+  background: transparent;
+  cursor: pointer;
 }
 
 .curr-sity:after {

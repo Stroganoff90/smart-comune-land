@@ -60,3 +60,10 @@ button {
 a, span, button, h1, h2, h3, h4, h5, h6, p, input {
 	font-family: MonR;
 } 
+
+textarea:hover,
+button:hover,
+input:hover,
+textarea:focus,
+button:focus,
+input:focus { outline: none; }
